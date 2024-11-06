@@ -8,21 +8,21 @@ const Features: React.FC = () => {
       description: 'Track near-Earth objects and space weather in real-time'
     },
     {
-      title: 'Earth & Mars Observatory',
-      description: 'Compare conditions on Earth and Mars with latest data'
-    },
-    {
       title: 'Deep Space Explorer',
       description: 'Explore exoplanets and astronomical discoveries'
     },
     {
       title: 'Space Technology Hub',
       description: 'Stay updated with latest space innovations'
+    },
+    {
+      title: 'Interaction Zone',
+      description: 'Engage with interactive simulations and quizzes'
     }
   ];
 
   return (
-    <section className="py-12 px-4">
+    <section className="py-12 px-5">
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature) => (

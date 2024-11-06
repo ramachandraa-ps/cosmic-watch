@@ -9,7 +9,8 @@ const Header: React.FC = () => {
     { name: 'Home', path: '/' },
     { name: 'Space Monitor', path: '/space-monitor' },
     { name: 'Deep Space', path: '/deep-space' },
-    { name: 'Tech Hub', path: '/tech-hub' }
+    { name: 'Tech Hub', path: '/tech-hub' },
+    { name: 'Interaction Zone', path: '/interaction-zone' }
   ];
 
   return (
