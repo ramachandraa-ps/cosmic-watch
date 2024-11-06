@@ -8,7 +8,6 @@ const Header: React.FC = () => {
   const navLinks: NavLink[] = [
     { name: 'Home', path: '/' },
     { name: 'Space Monitor', path: '/space-monitor' },
-    { name: 'Observatory', path: '/observatory' },
     { name: 'Deep Space', path: '/deep-space' },
     { name: 'Tech Hub', path: '/tech-hub' }
   ];
