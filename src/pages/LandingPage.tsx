@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Features from '../components/Features';
-import ApodSection from '../components/ApodSection';
+import SpaceFlightNews from '../components/SpaceFlightNews';
 
 const LandingPage: React.FC = () => {
   return (
@@ -19,9 +19,9 @@ const LandingPage: React.FC = () => {
           </p>
         </div>
       </section>
-
+      
       <Features />
-      <ApodSection />
+      <SpaceFlightNews />
     </div>
   );
 };
