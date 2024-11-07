@@ -2,11 +2,15 @@ import React from 'react';
 import Header from '../components/Header';
 import { useNavigate } from 'react-router-dom';
 
-const InteractionZone = () => {
+export const InteractionZone = () => {
   const navigate = useNavigate();
 
   const handleQuizStart = () => {
     navigate('/quiz');
+  };
+
+  const handleAstronautAlias = () => {
+    navigate('/Astronaut-Alias');
   };
 
   // Single upcoming webinar
@@ -170,10 +174,41 @@ const InteractionZone = () => {
               </button>
             </div>
           </div>
+          <div className="rounded-lg border border-gray-800 hover:border-blue-500 bg-gray-900 text-white shadow-lg transition-all duration-300">
+          <div className="flex flex-col space-y-1.5 p-6">
+            <h3 className="text-2xl font-semibold leading-none tracking-tight">Astronaut Alias</h3>
+          </div>
+          <div className="p-6 pt-0">
+            <p className="text-gray-300 mb-6">
+              Discover your unique space identity! Generate a cosmic astronaut name
+              based on your personal details. Perfect for young space enthusiasts
+              and future astronauts. Each name comes with a special mission profile
+              and rank!
+            </p>
+            <button 
+              className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-md transition-colors duration-300 text-sm font-medium group"
+              onClick={() => navigate('/astronaut-alias')}
+            >
+              Generate Name
+              <svg 
+                className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+          
         </div>
       </div>
     </div>
   );
-};
-
-export default InteractionZone;
+}; // End of InteractionZone component
