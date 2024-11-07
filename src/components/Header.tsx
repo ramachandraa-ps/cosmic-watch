@@ -11,6 +11,7 @@ const Header: React.FC = () => {
     { name: 'Deep Space', path: '/deep-space' },
     { name: 'Tech Hub', path: '/tech-hub' },
     { name: 'Interaction Zone', path: '/interaction-zone' }
+    
   ];
 
   return (
