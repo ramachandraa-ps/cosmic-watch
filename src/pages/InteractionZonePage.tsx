@@ -3,10 +3,10 @@ import Header from '../components/Header';
 import { useNavigate } from 'react-router-dom';
 
 const InteractionZone = () => {
-  const navigate = useNavigate();  // Add this hook
+  const navigate = useNavigate();
 
   const handleQuizStart = () => {
-    navigate('/quiz');  // This will navigate to the quiz page
+    navigate('/quiz');
   };
 
   return (
@@ -28,7 +28,8 @@ const InteractionZone = () => {
       {/* Cards Section */}
       <div className="max-w-6xl mx-auto p-6 space-y-6 relative -mt-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="rounded-lg border bg-card text-card-foreground shadow-sm">
+          {/* 3D Space Simulation Card */}
+          <div className="rounded-lg border border-gray-800 hover:border-blue-500 bg-gray-900 text-white shadow-lg transition-all duration-300">
             <div className="flex flex-col space-y-1.5 p-6">
               <h3 className="text-2xl font-semibold leading-none tracking-tight">3D Space Simulation</h3>
             </div>
@@ -41,16 +42,30 @@ const InteractionZone = () => {
               </p>
               <div className="p-6 pt-0">
                 <button 
-                  className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+                  className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-md transition-colors duration-300 text-sm font-medium group"
                   onClick={() => console.log('Simulation launched')}
                 >
                   Launch Simulation
+                  <svg 
+                    className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      strokeWidth={2} 
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
                 </button>
               </div>
             </div>
           </div>
 
-          <div className="rounded-lg border bg-card text-card-foreground shadow-sm">
+          {/* Interactive Quizzes Card */}
+          <div className="rounded-lg border border-gray-800 hover:border-blue-500 bg-gray-900 text-white shadow-lg transition-all duration-300">
             <div className="flex flex-col space-y-1.5 p-6">
               <h3 className="text-2xl font-semibold leading-none tracking-tight">Interactive Quizzes</h3>
             </div>
@@ -62,15 +77,29 @@ const InteractionZone = () => {
                 through the levels.
               </p>
               <button 
-                className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+                className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-md transition-colors duration-300 text-sm font-medium group"
                 onClick={handleQuizStart}
               >
                 Start Quiz
+                <svg 
+                  className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round" 
+                    strokeWidth={2} 
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
               </button>
             </div>
           </div>
 
-          <div className="rounded-lg border bg-card text-card-foreground shadow-sm">
+          {/* Mission Planner Card */}
+          <div className="rounded-lg border border-gray-800 hover:border-blue-500 bg-gray-900 text-white shadow-lg transition-all duration-300">
             <div className="flex flex-col space-y-1.5 p-6">
               <h3 className="text-2xl font-semibold leading-none tracking-tight">Mission Planner</h3>
             </div>
@@ -82,10 +111,23 @@ const InteractionZone = () => {
                 complexities of space exploration.
               </p>
               <button 
-                className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+                className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-md transition-colors duration-300 text-sm font-medium group"
                 onClick={() => console.log('Mission started')}
               >
                 Start Mission
+                <svg 
+                  className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round" 
+                    strokeWidth={2} 
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
               </button>
             </div>
           </div>
